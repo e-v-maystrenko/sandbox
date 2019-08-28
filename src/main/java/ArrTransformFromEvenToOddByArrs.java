@@ -1,3 +1,5 @@
+//Этот метод длинее, некорректно работает с нулем в исходных данных
+
 public class ArrTransformFromEvenToOddByArrs {
     public static void main(String[] args) {
         int[] arrayToSort = new int[]{1,2,3,4,5,3,2,5,7,9,0,2,3,4,1};
