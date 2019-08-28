@@ -1,6 +1,6 @@
 public class ArrTransformFromEvenToOddByArrs {
     public static void main(String[] args) {
-        int[] arrayToSort = new int[]{8, 5, 0, 4, 3, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+        int[] arrayToSort = new int[]{1,2,3,4,5,3,2,5,7,9,0,2,3,4,1};
         System.out.print("Source array:"+"\n");
         for (int i = 0; i < arrayToSort.length; i++) {
             System.out.print(arrayToSort[i] + " ");
