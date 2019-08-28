@@ -1,22 +1,24 @@
-public class ArrTransformFromEvenToOdd {
+public class ArrTransformFromEvenToOddByBubble {
     public static void main(String[] args) {
-        int[] arrayToSort = new int[]{1, 2, 3, 4, 5, 3, 2, 5, 7, 9, 0, 2, 3, 4, 1};
+        int[] arrayToSort = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
         for (int i = 0; i < arrayToSort.length; i++) {
             System.out.print(arrayToSort[i] + " ");
         }
         /*Выведем четность-нечетность элементов
         System.out.print("\n");
-        for (int i = 0; i < arrayToSort.length; i++) {//Проходим по всему массиву
+        for (int i = 0; i < arrayToSort.length; i++) {
             System.out.print(arrayToSort[i] % 2 + " ");
         }
         */
-        for (int i = 0; i < arrayToSort.length; i++) {//Проходим по всему массиву
-            if (!(0 == arrayToSort[i] % 2)) {//Если текущий элемено нечетный - меняем его местами с ближайшим следующим четным
+
+       for (int i = 0; i < arrayToSort.length; i++) {//Проходим по всему массиву
+            if (!(0 == arrayToSort[i] % 2)) {//Если текущий элемент нечетный - меняем его местами с ближайшим следующим четным
                 for (int j = i; j < arrayToSort.length; j++) {
                     if (0 == arrayToSort[j] % 2) {
                         int buffer = arrayToSort[i];
                         arrayToSort[i] = arrayToSort[j];
                         arrayToSort[j] = buffer;
+                        break;
                     }
                 }
             }
