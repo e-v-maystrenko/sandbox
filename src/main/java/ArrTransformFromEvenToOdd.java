@@ -1,24 +1,30 @@
 public class ArrTransformFromEvenToOdd {
-    //Определим, четное ли число
-        static boolean dividesByTwo(int a){
-            return (a%2==0);
-        }
-
-        public static void main(String[] args) {
+    public static void main(String[] args) {
         int[] arrayToSort = new int[]{1, 2, 3, 4, 5, 3, 2, 5, 7, 9, 0, 2, 3, 4, 1};
-
-        for (int i = 0; i <=arrayToSort.length ; i++) {
-                System.out.println(i);
-                if (dividesByTwo(arrayToSort[i])){
-
+        for (int i = 0; i < arrayToSort.length; i++) {
+            System.out.print(arrayToSort[i] + " ");
+        }
+        /*Выведем четность-нечетность элементов
+        System.out.print("\n");
+        for (int i = 0; i < arrayToSort.length; i++) {//Проходим по всему массиву
+            System.out.print(arrayToSort[i] % 2 + " ");
+        }
+        */
+        for (int i = 0; i < arrayToSort.length; i++) {//Проходим по всему массиву
+            if (!(0 == arrayToSort[i] % 2)) {//Если текущий элемено нечетный - меняем его местами с ближайшим следующим четным
+                for (int j = i; j < arrayToSort.length; j++) {
+                    if (0 == arrayToSort[j] % 2) {
+                        int buffer = arrayToSort[i];
+                        arrayToSort[i] = arrayToSort[j];
+                        arrayToSort[j] = buffer;
+                    }
+                }
             }
-
-        //for (int elem : arrayToSort) ; {//цикл размером в длину массива
-         //если из двух соседних элементов один четный, а другой нет - поменяем их местами
-            //if dividesByTwo(arrayToSort){
-            //
-            //}
-        System.out.println( dividesByTwo(6) );
-}
+        }
+        System.out.print("\n");
+        for (int i = 0; i < arrayToSort.length; i++) {
+            System.out.print(arrayToSort[i] + " ");
+        }
     }
 }
+
