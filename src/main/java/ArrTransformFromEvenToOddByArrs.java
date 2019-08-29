@@ -1,6 +1,4 @@
-//Этот метод длинее, некорректно работает с нулем в исходных данных
-
-public class ArrTransformFromEvenToOddByArrsNew2 {
+public class ArrTransformFromEvenToOddByArrs {
     public static void main(String[] args) {
         int[] arrayToSort = new int[]{1,2,3,4,5,3,2,5,7,9,0,2,3,4,1};
         System.out.print("Source array:"+"\n");
@@ -22,22 +20,15 @@ public class ArrTransformFromEvenToOddByArrsNew2 {
         //Создадим два массива для четных и нечетных чисел
         int[] arrayEven = new int[cauntEven];
         int[] arrayOdd = new int[cauntOdd];
-
+        int indexOfarrayEven=0;
+        int indexOfarrayOdd=0;
         for (int i = 0; i < arrayToSort.length; i++) {
-            if ((0 == arrayToSort[i] % 2)) {//Если текущий элемент исходного массива четный
-                for (int j = 0; j < arrayEven.length; j++) {//Запишем его в первый найденный нулевой элемент массива четных
-                    if (0==arrayEven[j]) {
-                        arrayEven[j] = arrayToSort[i];
-                        break;
-                    }
-                }
-            } else {//Если текущий элемент исходного массива нечетный
-                    for (int j = 0; j < arrayOdd.length; j++) {//Запишем его в первый найденный нулевой элемент массива нечетных
-                        if (0==arrayOdd[j]) {
-                            arrayOdd[j] = arrayToSort[i];
-                            break;
-                        }
-                    }
+            if ((0 == arrayToSort[i] % 2)) {
+                arrayEven[indexOfarrayEven] = arrayToSort[i];
+                indexOfarrayEven++;
+            } else {
+                arrayOdd[indexOfarrayOdd] = arrayToSort[i];
+                indexOfarrayOdd++;
             }
         }
         System.out.print("\n");
