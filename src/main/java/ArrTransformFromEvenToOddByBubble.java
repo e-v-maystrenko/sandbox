@@ -19,6 +19,7 @@ public class ArrTransformFromEvenToOddByBubble {
                 }
             }
         }
+
         System.out.print("\n");
         for (int i = 0; i < arrayToSort.length; i++) {
             System.out.print(arrayToSort[i] + " ");
