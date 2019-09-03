@@ -11,7 +11,6 @@ public class ArrTransformFromEvenToOddByArrs {
         }
 
         //Посчитаем количество четных и нечетных элементов в массиве
-        //
         int cauntEven=0;
         int cauntOdd=0;
         for (int i = 0; i < arrayToSort.length; i++) {
