@@ -7,7 +7,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class AppTest {
-    @Test public void testAppHasAGreeting() {
+    @Test public void test() {
+        ArrTransformFromEvenToOddByArrs objectOfAnotherClass = new ArrTransformFromEvenToOddByArrs();
+        objectOfAnotherClass.transfortOfAray();
         //
     }
 }
