@@ -1,4 +1,4 @@
-//package homework3;
+package homework3;//package homework3;
 
 //import homework3.ArrTransformFromEvenToOddByArrs;
 
