@@ -23,7 +23,7 @@ public class ArrTransformFromEvenToOddByArrs {
             }
         }
 
-        //Создадим два массива для четных и нечетных чисел/
+        //Создадим два массива для четных и нечетных чисел
         int[] arrayEven = new int[cauntEven];
         int[] arrayOdd = new int[cauntOdd];
         int indexOfarrayEven = 0;
