@@ -1,3 +1,4 @@
+//Источник: https://ru.wikipedia.org/wiki/Null_object_(шаблон_проектирования)
 package subdir;
 
 public class AbstractTest {
