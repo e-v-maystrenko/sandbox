@@ -3,7 +3,7 @@ package subdir;
 
 public class AbstractTest {
     public static void main(String[] args) {
-        AbstractEntity realEntity = new RealEntity();
+        AbstractEntity realEntity = new RealEntity();//почему тут создается объект типа асбтрактного класса AbstractEntity вместо типа реального RealEntity?
         realEntity.doSomething(); // RealEntity::doSomething
 
         AbstractEntity unknownEntity = new NullEntity();
