@@ -9,9 +9,9 @@ public class SumElemsOfArr {
     public static int sum(int[] arrayToSum) {
         int sumOfArrayElements = 0;
         System.out.print("array:" + "\n");
-        for (int i = 0; i < arrayToSum.length; i++) {
-            System.out.print(arrayToSum[i] + " ");
-            sumOfArrayElements = sumOfArrayElements + arrayToSum[i];
+        for (int value : arrayToSum) {
+            System.out.print(value + " ");
+            sumOfArrayElements = sumOfArrayElements + value;
         }
         System.out.print("\n" + "SumOfArrayElements:" + "\n" + sumOfArrayElements);
     return sumOfArrayElements;
